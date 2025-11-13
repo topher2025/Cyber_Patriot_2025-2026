@@ -102,7 +102,12 @@
   ```bash
   echo "nospoof on" | sudo tee -a /etc/host.conf
   ```
-
+- [ ] Address Space Randomization:
+  ```bash
+  sudo gedit admin:///etc/sysctl.conf
+  # kernel.randomize_va_space=0
+  kernel.randomize_va_space=2
+  ```
 ---
 
 ## REMOVE UNAUTHORIZED SOFTWARE / FILES
