@@ -5,7 +5,7 @@ Welcome to the **CyberPatriot Linux Crew GitHub Repository**! This repo has all 
 ---
 ## Updates
 > [!IMPORTANT]
-> Competition this Friday!    _11/12/25_
+> Competition this Friday!    _12/12/25_
 
 > [!WARNING]
 > **Note:** This repo is for internal team use ***ONLY***. Please do not share scripts.
