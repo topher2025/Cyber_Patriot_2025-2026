@@ -6,7 +6,7 @@
 - [ ] Complete all Forensics Questions before system changes.
 - [ ] Disable root SSH login:
   ```bash
-  sudo gedit /etc/ssh/sshd_config
+  sudo nano /etc/ssh/sshd_config
   # PermitRootLogin no
   ```
 - [ ] Enable/disable SSH as directed:
@@ -48,19 +48,19 @@
 ## PASSWORD POLICIES
 - [ ] Set minimum password length:
   ```bash
-  sudo gedit /etc/pam.d/common-password
+  sudo nano /etc/pam.d/common-password
   # Add: pam_pwquality.so retry=3 minlen=10
   ```
 - [ ] Configure password aging:
   ```bash
-  sudo gedit /etc/login.defs
+  sudo nano /etc/login.defs
   # PASS_MIN_DAYS 2
   # PASS_MAX_DAYS 90
   # PASS_WARN_AGE 7
   ```
 - [ ] Remove null passwords:
   ```bash
-  sudo gedit /etc/pam.d/common-auth
+  sudo nano /etc/pam.d/common-auth
   # Remove 'nullok'
   ```
 - [ ] Add lockout policy:
@@ -86,7 +86,7 @@
 ## NETWORK & KERNEL
 - [ ] Enable SYN cookies:
   ```bash
-  sudo gedit /etc/sysctl.conf
+  sudo nano /etc/sysctl.conf
   # net.ipv4.tcp_syncookies=1
   sudo sysctl --system
   ```
@@ -100,7 +100,7 @@
   ```
 - [ ] Address Space Randomization:
   ```bash
-  sudo gedit admin:///etc/sysctl.conf
+  sudo nano /etc/sysctl.conf
   # kernel.randomize_va_space=0
   kernel.randomize_va_space=2
   ```
@@ -207,7 +207,7 @@
 ## DISABLE GUEST ACCOUNT
 - [ ] Disable guest login:
   ```bash
-  sudo gedit /etc/lightdm/lightdm.conf
+  sudo nano /etc/lightdm/lightdm.conf
   # allow-guest=false
   ```
 
