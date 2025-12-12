@@ -98,10 +98,6 @@
   ```bash
   # net.ipv6.conf.all.disable_ipv6=1
   ```
-- [ ] Prevent IP spoofing:
-  ```bash
-  echo "nospoof on" | sudo tee -a /etc/host.conf
-  ```
 - [ ] Address Space Randomization:
   ```bash
   sudo gedit admin:///etc/sysctl.conf
